@@ -1,0 +1,22 @@
+EC2 
+Launch instance
+name the instance
+os = ubuntu
+key pair login: create new type RSA format .ppk
+firewall: allow all
+Launch instance
+
+
+Start Putty
+ubuntu@ipv4
+connection: SSH: Auth: Credentials: .ppk file
+open then accept
+
+
+sudo apt install apache2 -y
+cd /var/www/html 
+ls
+sudo rm index.html
+ls
+sudo git clone gitlink .
+ls

@@ -1,0 +1,47 @@
+Open RDS
+
+create database
+select easy create
+
+configuration: 
+engine type : MySQL
+DB instance profile: free tier
+
+master username : admin
+Master password: admin1234
+
+create database
+
+open the database instance
+copy the endpoint and paste it in config.php file in host
+
+scroll down
+setup ec2 connection
+select ec2 instance : continue : Confirm and setup
+
+now open ec2: 
+select instances
+
+go to security groups : select the instance : click on inbound rule : edit inbound rule
+add rule : type = all traffic : source = apnawala instance 
+save rule
+
+
+go to instances
+select the instance 
+click connect 
+connect
+
+new tab will open
+
+mysql -h endpoint paste krneka -u admin -p
+enter password
+
+show databases;
+creates database dbname;
+
+use dbname;
+copy database from db.sql
+paste it
+
+now go to elastic beanstalk and continue it

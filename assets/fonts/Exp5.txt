@@ -1,0 +1,28 @@
+files for this exp: https://github.com/softon/todophp
+
+Open Elastic beanstalk
+
+create application
+give name
+select  platform
+scroll down
+click on configure more options
+
+security: edit
+service role: Lab Role
+ec2 keypair: vockey
+IAM instance profile: Lab Instance Profile
+save it
+scroll down 
+create app
+
+abhi jo bhi h sab rds mei karo yaha rds krne ke baad aao
+
+
+zip all the file
+
+click on upload and deploy
+select the file
+click on deploy
+
+click on the link to see the result

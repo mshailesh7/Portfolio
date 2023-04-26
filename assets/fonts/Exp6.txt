@@ -1,0 +1,47 @@
+open S3
+
+click create bucket
+name it uniquely
+
+no change
+
+scroll down
+
+Block Public Access
+UNCHECK IT
+acknowledge the risk
+
+scroll down
+
+create bucket
+
+select the bucket
+
+object: click on upload
+upload the files and folders
+click upload
+close after uploading
+
+go to properties
+scroll down till end
+Static website hosting : edit : enable : index.html
+
+now go to permissions
+scroll down 
+go to bucket policy : edit
+
+Click policy generator
+policy type : s3 bucket policy
+effect : allow
+principal :  *
+actions : get object
+arn: copy from s3 bucket arn: paste/*
+add statement
+generate policy
+copy the policy and paste it in s3 bucket policy
+save changes
+
+go to properties 
+scroll to the end
+click on the link in static website hosting
+
